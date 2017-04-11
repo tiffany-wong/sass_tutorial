@@ -23,4 +23,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# sass_tutorial
+
+# DevMatch tutorial
