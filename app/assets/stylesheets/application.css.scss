@@ -24,9 +24,14 @@ background: #36D1DC; /*fallback for old browers */
 background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
 background: linear-gradient(to right, #5B86E5, #36D1DC);
 }
+//Nav Styles
 .navbar {
     border: none;
 } 
+
+.navbar-brand{
+  font-family: sans-serif;
+}
 
 /*.navbar-default .navbar-brand{
     color:white;
