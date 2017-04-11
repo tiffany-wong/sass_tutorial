@@ -47,6 +47,16 @@ background: linear-gradient(to right, #5B86E5, #36D1DC);
   color: white;
   opacity: 0.75;
 } */
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+/*.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #00c6ff;
+  }
+} */
 .home-callout{
     color: white;
     margin-top: -20px;
