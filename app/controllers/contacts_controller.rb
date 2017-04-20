@@ -18,17 +18,17 @@ class ContactsController < ApplicationController
       body = params[:contact][:comments]
       # Plug variables into Contact Mailer 
       # email method and send email
-      ContactMailer.contact_email(name, email, body).deliver
+      # ContactMailer.contact_email(name, email, body).deliver
       # Store success message in flash hash
       # and redirect to the new action
       flash[:success] = "Message sent."
-      redirect_to new_contact_path
+      redirect_to new_contact_path, notice: "Message sent."
     else
       # If Contact object doesn't save,
       # store errors in flash hash,
       # and redirect to the new action
       flash[:danger] = @contact.errors.full_messages.join(", ")
-      redirect_to new_contact_path
+      redirect_to new_contact_path, notice: "Error occurred"
     end
   end
   
